@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ }
+ 	
+body{
+ 	background-color: rgba(60,179,113,0.5);
+}
+.front{
+	margin-top: 100px;
+	text-align: center;
+	text-decoration-style: solid;
+	font-family: sans-serif;
+
+}
+.button {
+  background-color: #1cc9c6;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #4CAF50;
+
+}
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 10px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 3px #2ba805;
+  }
+}
+.button:hover {
+        animation: glowing 1300ms infinite;
+      }
+</style>
+</head>
+<body>
+<div class="front">
+   <h2>Text to Sign Language Translation</h2><br><br><br><br>
+
+   <h4>Enter your text here:</h4><br>
+   <textarea rows="5" cols="50"></textarea><br><br>
+
+   <a class="button" href="/trans"> Translate! </a>
+ </div>  
+</body>
+</html>
